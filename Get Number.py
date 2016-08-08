@@ -1,10 +1,21 @@
 def get_number(lower, upper):
 
-  num = int(input("please enter a number:"))
+  number = True
 
-  while num < lower or num > upper:
-      print("Please enter a valid number!")
-      num = int(input("please enter a number:"))
+  while number:
+
+     try:
+         num = int(input("please enter a number:"))
+
+     except ValueError:
+         print("please enter a valid number")
+
+     else:
+         if num < lower or num > upper:
+             print("please enter a valid number")
+
+         else:
+            number = False
 
   print("you enter is " + str(num))
 
