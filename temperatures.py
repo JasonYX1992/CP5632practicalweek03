@@ -2,6 +2,7 @@
 Transfer celsius to fahrenheit or fahrenheit to celsius
 """
 
+
 def temperatures():
     MENU = "C - celsius to fahrenheit\nF - fahrenheit to celsius\nQ-Quit"
     print(MENU)
@@ -23,6 +24,7 @@ def temperatures():
 def transfer_to_celsius(celsius):
     fahrenheit = celsius * 9 / 5 + 32
     print(fahrenheit)
+
 
 def transfer_to_fahrenheit(fahrenheit):
     celsius = 5 / 9 * (fahrenheit - 32)
