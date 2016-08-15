@@ -4,8 +4,8 @@ Transfer celsius to fahrenheit or fahrenheit to celsius
 
 
 def temperatures():
-    MENU = "C - celsius to fahrenheit\nF - fahrenheit to celsius\nQ-Quit"
-    print(MENU)
+    menu = "C - celsius to fahrenheit\nF - fahrenheit to celsius\nQ-Quit"
+    print(menu)
     choice = input(">>>").upper()
     while choice != "Q":
         if choice == "C":
@@ -16,7 +16,7 @@ def temperatures():
             transfer_to_fahrenheit(fahrenheit)
         else:
             print("Invalid value")
-        print(MENU)
+        print(menu)
         choice = input(">>>").upper()
     print("Thanks")
 
